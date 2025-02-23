@@ -40,3 +40,16 @@ for NUM_DPUS in "${VALUES[@]}"; do
 done
 
 echo "All runs completed!"
+archive: ${ZIP_FILE}"
+        zip -r "${ZIP_FILE}" bin
+
+        # Clean up bin directory
+        echo "Cleaning up bin directory..."
+        rm -rf bin
+        mkdir bin
+
+        echo "Completed iteration for ${TEST_NAME} with --num_dpus_per_rank=${NUM_DPUS}"
+    done
+done
+
+echo "All runs completed!"

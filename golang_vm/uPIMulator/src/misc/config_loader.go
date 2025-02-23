@@ -7,7 +7,7 @@ func (this *ConfigLoader) Init() {
 }
 
 func (this *ConfigLoader) AddressWidth() int {
-	return 32
+	return 64
 }
 
 func (this *ConfigLoader) AtomicDataWidth() int {
@@ -35,7 +35,7 @@ func (this *ConfigLoader) IramSize() int64 {
 }
 
 func (this *ConfigLoader) WramDataWidth() int {
-	return 32
+	return 1024
 }
 
 func (this *ConfigLoader) WramOffset() int64 {
@@ -47,7 +47,7 @@ func (this *ConfigLoader) WramSize() int64 {
 }
 
 func (this *ConfigLoader) MramDataWidth() int {
-	return 32
+	return 1024
 }
 
 func (this *ConfigLoader) MramOffset() int64 {
@@ -55,7 +55,7 @@ func (this *ConfigLoader) MramOffset() int64 {
 }
 
 func (this *ConfigLoader) MramSize() int64 {
-	return 64 * 1024 * 1024
+	return 64 * 1024 * 1024 * 1024
 }
 
 func (this *ConfigLoader) StackSize() int64 {
@@ -79,7 +79,7 @@ func (this *ConfigLoader) VmBankOffset() int64 {
 }
 
 func (this *ConfigLoader) VmBankSize() int64 {
-	return 128 * 1024 * 1024
+	return 128 * 1024 * 1024 * 1024
 }
 
 func (this *ConfigLoader) VmBg0() int {
@@ -94,7 +94,7 @@ func (this *ConfigLoader) VmBank() int {
 	return 18
 }
 
-func (this *ConfigLoader) VmMemorySize() int64 { return 1024 }
+func (this *ConfigLoader) VmMemorySize() int64 { return 1024 * 1024 * 1024 }
 
 func (this *ConfigLoader) GarbageCollectionThreshold() int64 {
 	return 100
