@@ -1,0 +1,26 @@
+OPTIONS
+num_vm_banks_per_rank  -->  16
+num_tasklets  -->  16
+num_vm_ranks_per_channel  -->  2
+wordline_size  -->  1024
+reorder_window_size  -->  256
+t_ras  -->  78
+t_rp  -->  32
+t_bl  -->  8
+bin_dirpath  -->  /uPIMulator/golang_vm/uPIMulator/bin16/
+benchmark  -->  RED
+num_dpus_per_rank  -->  16
+num_vm_channels  -->  1
+num_revolver_scheduling_cycles  -->  11
+min_access_granularity  -->  8
+t_rcd  -->  32
+memory_frequency  -->  3200
+num_pipeline_stages  -->  14
+t_cl  -->  32
+data_prep_params  -->  2097152
+root_dirpath  -->  /uPIMulator/golang_vm/uPIMulator/
+logic_frequency  -->  1600
+verbose  -->  2
+num_channels  -->  8
+num_ranks_per_channel  -->  2
+
